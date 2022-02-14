@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/897c71d1b6.js" crossorigin="anonymous"></script>
+    <title>WebAndMobileDesign Assignment 2</title>
+    <!--Food on Wheels
+    a food delivery service static prototype-->
+</head>
+<body>
+    <div class="mainP">
+        <div class="dispHome">
+            <div class="header">
+                <a href="#"><img class="logo" src="imgs/FoodOnWheels.png" alt=""></a>
+                <div class="account" onclick="filler()">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+            <div class="pickupDelivery">
+                <a href="#" style="color:#a34848">Delivery</a>
+                <a href="#">Pickup</a>
+            </div>
+            <div class="mySlides fade">
+                <img src="imgs/1.png" class="slideshow"/>
+              </div>
+              
+              <div class="mySlides fade">
+                <img src="imgs/2.png" class="slideshow"/>
+              </div>
+
+              <div class="mySlides fade">
+                <img src="imgs/3.png" class="slideshow"/>
+              </div>
+
+              <div class="foodRow">
+                  <img class="foodRowImg" src="imgs/mcdonaldsBanner.jpg" alt="">
+                <div class="foodRowText">
+                    <h2>Mcdonald's</h2>
+                    <div class="foodRowTextP">
+                    <p>15 - 20 mins</p>
+                    <p>$3.25 delivery fee</p>
+                 </div>
+                </div>
+             </div>
+
+             <div class="foodRow">
+                <img class="foodRowImg" src="imgs/subwayBanner.jpg" alt="">
+              <div class="foodRowText">
+                  <h2>Subway</h2>
+                  <div class="foodRowTextP">
+                  <p>15 - 20 mins</p>
+                  <p>$3.20 delivery fee</p>
+               </div>
+              </div>
+           </div>
+             
+             <div class="foodRow">
+                <img class="foodRowImg" src="imgs/thaiExpressBanner.jpg" alt="">
+              <div class="foodRowText">
+                  <h2>Thai Express</h2>
+                  <div class="foodRowTextP">
+                  <p>15 - 25 mins</p>
+                  <p>$3.50 delivery fee</p>
+               </div>
+              </div>
+           </div>
+
+           <div class="foodRow">
+            <img class="foodRowImg" src="imgs/fiveguysBanner.jpg" alt="">
+          <div class="foodRowText">
+              <h2>Five Guys</h2>
+              <div class="foodRowTextP">
+              <p>30 - 45 mins</p>
+              <p>$4.00 delivery fee</p>
+           </div>
+          </div>
+       </div>
+       <div class="footer">
+        <div class="footerIcon" onclick="filler()"><i class="fa-solid fa-house"></i></div>
+        <div class="footerIcon" onclick="filler()"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="footerIcon" onclick="filler()"><i class="fa-solid fa-book"></i></div>
+       </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2500);
+}
+function filler() {
+    alert("filler function");
+}
+    </script>
+</body>
+</html>
